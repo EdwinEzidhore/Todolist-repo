@@ -3,6 +3,7 @@ import Taskdelete from "./Taskdelete";
 import { MdAddToPhotos } from "react-icons/md";
 import Tasktoglecheck from "./Tasktoglecheck";
 import { RiCalendarTodoFill } from "react-icons/ri";
+import { AiOutlineFileDone } from "react-icons/ai";
 
 
 const Tasklist = () => {
@@ -58,7 +59,7 @@ const Tasklist = () => {
             <div className="To-do-list">
                 <ul className="ul-todo-list">
                     {
-                        list.length===0 ? <h2>No Todos</h2> :<h2 className="todos-head">Todos<RiCalendarTodoFill /></h2>
+                        list.length===0 ? <h2 >No Todos<AiOutlineFileDone /></h2> :<h2 className="todos-head">Todos<RiCalendarTodoFill /></h2>
                     }
                     
                     {
