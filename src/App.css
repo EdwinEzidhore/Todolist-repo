@@ -1,0 +1,122 @@
+
+
+body{
+    background: #9CECFB;  
+    background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  
+    background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); 
+    
+
+}
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    color: white;
+}
+
+.App .input-container {
+    
+    background: transparent;
+    margin-bottom: 100px; 
+    border: 3px solid rgba(225,255,255,.2);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    padding: 20px 40px;
+    border-radius: 10px;
+    width: 400px;
+   
+}
+
+.wrapper {
+    text-align: center;
+    position: relative;
+    
+    
+}
+
+.main-heading {
+    margin-bottom: 10px;
+}
+
+.sub-heading {
+    margin-bottom: 40px;
+}
+
+.task-input {
+    
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border:none;
+    border-radius: 10px;
+    outline: none;
+   
+    
+}
+
+ .Submit-btn{
+    position: absolute;
+    right: 0;
+    
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ;
+}
+
+.Submit-btn:hover {
+    background-color: #0056b3;
+}
+.To-do-list{
+   
+}
+.ul-todo-list{
+ padding-left: 0;
+}
+.li-todo-list{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+
+.li-todo-list p{
+    background: #56CCF2;  
+    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2); 
+    background: linear-gradient(to right, #2F80ED, #56CCF2); 
+     padding: 10px;
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 7px;
+    font-size: 18px;
+    
+    
+}
+.todo-list-checkbox{
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.9) ;
+    text-decoration: overline;
+}
+.checked-text{
+    text-decoration: line-through;
+}
+
+.todo-list-delete{
+    border: none;
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.9); ;
+    height: 35px;
+    width:60px;
+    position: absolute;
+    right: 10px;
+    border-radius: 50px;
+   
+}
