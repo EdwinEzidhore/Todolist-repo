@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Taskdelete from "./Taskdelete";
 import { MdAddToPhotos } from "react-icons/md";
-import { IoCheckbox } from "react-icons/io5";
+import Tasktoglecheck from "./Tasktoglecheck";
+import { RiCalendarTodoFill } from "react-icons/ri";
 
 
 const Tasklist = () => {
@@ -55,18 +56,25 @@ const Tasklist = () => {
             </div>
             </div>
             <div className="To-do-list">
-                <ul  className="ul-todo-list">
+                <ul className="ul-todo-list">
                     {
+                        list.length===0 ? <h2>No Todos</h2> :<h2 className="todos-head">Todos<RiCalendarTodoFill /></h2>
+                    }
+                    
+                    {
+                        
                         list.map((task) => {
                             return (
-                                <li  key={task.id} className="li-todo-list">
-                                    <input className="todo-list-checkbox" type="checkbox" value={task.status} onChange={(e) => isticked(task.id, e.target.checked)}></input>
+                                <>
+                
+                                 <li  key={task.id} className="li-todo-list">
+                                  
+                                  <Tasktoglecheck id={task.id} status={task.status} name={task.name} togglecheck={isticked}  />
+                                  <Taskdelete handledelete={deletetask} id={task.id}  />
+                                  
+                              </li>
+                                </>
                                 
-                                    <span className={task.status ? 'checked-text' : ''}><p>{task.name}</p></span>
-                                    
-                                    <Taskdelete handledelete={deletetask} id={task.id} />
-                                    
-                                </li>
                             )
                         })
                     }
