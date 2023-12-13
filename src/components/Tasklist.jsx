@@ -59,7 +59,7 @@ const Tasklist = () => {
             <div className="To-do-list">
                 <ul className="ul-todo-list">
                     {
-                        list.length===0 ? <h2 >No Todos<AiOutlineFileDone /></h2> :<h2 className="todos-head">Todos<RiCalendarTodoFill /></h2>
+                        list.length===0 ? <h2>No Todos<AiOutlineFileDone /></h2> :<h2 className="todos-head">Todos<RiCalendarTodoFill /></h2>
                     }
                     
                     {
